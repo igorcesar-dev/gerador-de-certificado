@@ -25,10 +25,5 @@ Preencha o formulário com as informações necessárias:
 
 Ou você pode enviar um arquivo no formato XLSX na aba de gerar certificado automaticamente.
 
-## Limitações
-* O projeto não realiza validações de dados além de verificar o tamanho máximo para os campos de nome do aluno e nome do curso.
-* Não há controle de autenticação ou de acesso, o que significa que qualquer pessoa pode acessar e usar o sistema.
-* Não é possível personalizar o modelo do certificado diretamente no site; isso deve ser feito manualmente, alterando a imagem de fundo no código CSS.
-
 ## Considerações Finais
-O projeto "Gerador de Certificado" está em desenvolvimento e passará por atualizações.
+O projeto "Gerador de Certificado", foi desenvolvido com a finalidade de agilizar os processos em um ambiente escolar, o projeto ainda passará por melhoras e atualizações, fique a vontade para contribuir com o projeto.
