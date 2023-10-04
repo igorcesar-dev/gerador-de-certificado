@@ -26,7 +26,7 @@ export default {
         "..//public/frontend/assets/img/igor.png",
         "..//public/frontend/assets/img/miqueias.png",
         "..//public/frontend/assets/img/nadine.png",
-        "..//public/frontend/assets/img/paula.png",
+        "..//public/frontend/assets/img/paula.jpg",
         "..//public/frontend/assets/img/reginaldo.png",
         "..//public/frontend/assets/img/sara.png",
         "..//public/frontend/assets/img/geral.png",
