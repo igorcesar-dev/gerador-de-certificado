@@ -22,13 +22,14 @@ export default {
   data() {
     return {
       arrayImg: [
-        "../public/frontend/assets/img/assinaturaIgor.png",
-        "assets/img/assinaturaIgor.png",
-        "assets/img/assinaturaMiqueias.png",
-        "assets/img/assinaturaNadine.png",
-        "assets/img/assinaturaPaula.png",
-        "assets/img/assinaturaReginaldo.png",
-        "assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaFilipe.png",
+        "..//public/frontend/assets/img/assinaturaIgor3.png",
+        "..//public/frontend/assets/img/assinaturaMiqueias.png",
+        "..//public/frontend/assets/img/assinaturaNadine.png",
+        "..//public/frontend/assets/img/assinaturaPaula2.png",
+        "..//public/frontend/assets/img/assinaturaReginaldo.png",
+        "..//public/frontend/assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaGeral.png",
       ],
       educadorMap: {
         filipe: 0,
@@ -38,6 +39,7 @@ export default {
         paula: 4,
         reginaldo: 5,
         sara: 6,
+        geral: 7,
       },
       educadorIndex: "",
       workbook: "",
@@ -53,11 +55,11 @@ export default {
         reader.onload = (e) => {
           console.log("Arquivo carregado com sucesso!");
           const data = new Uint8Array(e.target.result);
-          console.log(data)
+          console.log(data);
 
           this.workbook = XLSX.read(data, { type: "array" });
           const sheetName = this.workbook.SheetNames[0];
-          console.log(sheetName)
+          console.log(sheetName);
           const sheet = this.workbook.Sheets[sheetName];
 
           const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
@@ -77,6 +79,7 @@ export default {
               certificateDiv.classList.add("certificate");
 
               certificateDiv.innerHTML = `
+              <div class="container-form">
                 <div id="content">
                   <div class="center">
                     <p class="titulo conteudo">Certificado</p>
@@ -90,6 +93,7 @@ export default {
                     <p class="local">Vitória da Conquista, Bahia</p>
                   </div>
                 </div>
+              </div>
               `;
 
               // Gere o certificado em PDF
@@ -170,3 +174,14 @@ export default {
   },
 };
 </script>
+
+<style>
+.container-form {
+  display: grid;
+  place-items: center;
+}
+
+.signature {
+  width: 9em;
+}
+</style>

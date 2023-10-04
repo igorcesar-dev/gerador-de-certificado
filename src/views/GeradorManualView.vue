@@ -45,10 +45,7 @@
                   Concluiu com êxito a Oficina de {{ this.curso }} em 2023, com a carga
                   horária total de {{ this.carga }} hora(s) na Prepara Cursos.
                 </p>
-                <img
-                  class="signature"
-                  :src="assinatura"
-                />
+                <img class="signature" :src="assinatura" />
                 <p class="local">Vitória da Conquista, Bahia</p>
               </div>
             </div>
@@ -70,9 +67,14 @@ export default {
       carga: "",
       educador: "filipe", // Valor padrão
       arrayImg: [
+        "..//public/frontend/assets/img/assinaturaFilipe.png",
         "..//public/frontend/assets/img/assinaturaIgor.png",
-        "..//public/frontend/assets/img/assinaturaIgor.png",
-        "..//public/frontend/assets/img/assinaturaIgor.png",
+        "..//public/frontend/assets/img/assinaturaMiqueias.png",
+        "..//public/frontend/assets/img/assinaturaNadine.png",
+        "..//public/frontend/assets/img/assinaturaPaula.png",
+        "..//public/frontend/assets/img/assinaturaReginaldo.png",
+        "..//public/frontend/assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaGeral.png",
       ],
       educadores: {
         filipe: 0,
@@ -82,6 +84,7 @@ export default {
         paula: 4,
         reginaldo: 5,
         sara: 6,
+        geral: 7,
       },
       content: "",
       educadorN: "",
@@ -290,7 +293,7 @@ input {
 }
 
 .signature {
-  width: 4em;
+  width: 9em;
   border-bottom: solid 1px;
   margin: 1em;
   text-align: center;

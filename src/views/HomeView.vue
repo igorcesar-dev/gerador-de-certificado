@@ -1,7 +1,10 @@
 <template>
   <div class="bg-dark-subtle">
     <div class="home">
-      <h1>Gerador de certificados by Igor César</h1>
+      <div>
+        <h1>Gerador de certificados - por Igor César</h1>
+        <p>Gere certificados com apenas "1" click</p>
+      </div>
     </div>
   </div>
 </template>
