@@ -23,10 +23,10 @@ export default {
     return {
       arrayImg: [
         "..//public/frontend/assets/img/assinaturaFilipe.png",
-        "..//public/frontend/assets/img/assinaturaIgor3.png",
+        "..//public/frontend/assets/img/assinaturaIgor.png",
         "..//public/frontend/assets/img/assinaturaMiqueias.png",
         "..//public/frontend/assets/img/assinaturaNadine.png",
-        "..//public/frontend/assets/img/assinaturaPaula2.png",
+        "..//public/frontend/assets/img/assinaturaPaula.png",
         "..//public/frontend/assets/img/assinaturaReginaldo.png",
         "..//public/frontend/assets/img/assinaturaSara.png",
         "..//public/frontend/assets/img/assinaturaGeral.png",
@@ -42,7 +42,7 @@ export default {
         geral: 7,
       },
       educadorIndex: "",
-      workbook: "",
+      assinatura: "",
     };
   },
   methods: {
@@ -55,11 +55,9 @@ export default {
         reader.onload = (e) => {
           console.log("Arquivo carregado com sucesso!");
           const data = new Uint8Array(e.target.result);
-          console.log(data);
 
           this.workbook = XLSX.read(data, { type: "array" });
           const sheetName = this.workbook.SheetNames[0];
-          console.log(sheetName);
           const sheet = this.workbook.Sheets[sheetName];
 
           const jsonData = XLSX.utils.sheet_to_json(sheet, { header: 1 });
@@ -75,6 +73,8 @@ export default {
 
             if (educador in this.educadorMap) {
               this.educadorIndex = this.educadorMap[educador];
+              this.assinatura = this.arrayImg[this.educadorIndex];
+
               const certificateDiv = document.createElement("div");
               certificateDiv.classList.add("certificate");
 
@@ -89,7 +89,7 @@ export default {
                       aluno[1]
                     )} em 2023, com a carga horária total de
                       ${aluno[2]} hora(s) na Prepara Cursos.</p>
-                    <img class="signature" :src="arrayImg[educadorIndex]">
+                    <img class="signature" src="${this.assinatura}">
                     <p class="local">Vitória da Conquista, Bahia</p>
                   </div>
                 </div>
