@@ -22,14 +22,14 @@ export default {
   data() {
     return {
       arrayImg: [
-        "..//public/frontend/assets/img/assinaturaFilipe.png",
-        "..//public/frontend/assets/img/assinaturaIgor.png",
-        "..//public/frontend/assets/img/assinaturaMiqueias.png",
-        "..//public/frontend/assets/img/assinaturaNadine.png",
-        "..//public/frontend/assets/img/assinaturaPaula.png",
-        "..//public/frontend/assets/img/assinaturaReginaldo.png",
-        "..//public/frontend/assets/img/assinaturaSara.png",
-        "..//public/frontend/assets/img/assinaturaGeral.png",
+        "..//public/frontend/assets/img/filipe.png",
+        "..//public/frontend/assets/img/igor.png",
+        "..//public/frontend/assets/img/miqueias.png",
+        "..//public/frontend/assets/img/nadine.png",
+        "..//public/frontend/assets/img/paula.png",
+        "..//public/frontend/assets/img/reginaldo.png",
+        "..//public/frontend/assets/img/sara.png",
+        "..//public/frontend/assets/img/geral.png",
       ],
       educadorMap: {
         filipe: 0,
