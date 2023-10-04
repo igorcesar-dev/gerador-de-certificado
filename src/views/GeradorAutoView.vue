@@ -22,14 +22,14 @@ export default {
   data() {
     return {
       arrayImg: [
-        "../assets/img/assinaturaFilipe.png",
-        "../assets/img/assinaturaIgor.png",
-        "../assets/img/assinaturaMiqueias.png",
-        "../assets/img/assinaturaNadine.png",
-        "../assets/img/assinaturaPaula.png",
-        "../assets/img/assinaturaReginaldo.png",
-        "../assets/img/assinaturaSara.png",
-        "../assets/img/assinaturaGeral.png",
+        "..//public/frontend/assets/img/assinaturaFilipe.png",
+        "..//public/frontend/assets/img/assinaturaIgor.png",
+        "..//public/frontend/assets/img/assinaturaMiqueias.png",
+        "..//public/frontend/assets/img/assinaturaNadine.png",
+        "..//public/frontend/assets/img/assinaturaPaula.png",
+        "..//public/frontend/assets/img/assinaturaReginaldo.png",
+        "..//public/frontend/assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaGeral.png",
       ],
       educadorMap: {
         filipe: 0,
@@ -43,7 +43,6 @@ export default {
       },
       educadorIndex: "",
       assinatura: "",
-      content: "",
     };
   },
   methods: {
@@ -75,28 +74,31 @@ export default {
             if (educador in this.educadorMap) {
               this.educadorIndex = this.educadorMap[educador];
               this.assinatura = this.arrayImg[this.educadorIndex];
-              this.content = `
-                  <div class="container-form">
-                      <div id="content">
-                        <div class="center">
-                          <p class="titulo">Certificado</p>
-                          <p class="fonte-normal-1">
-                            A Prepara Cursos certifica para devidos fins que
-                          </p>
-                          <p class="nome-aluno">${this.nomeValid(aluno[0])}</p>
-                          <p class="fonte-normal-2">
-                            Concluiu com êxito a Oficina de ${this.cursoValid(aluno[1])} em 2023, com a carga
-                            horária total de ${aluno[2]} hora(s) na Prepara Cursos.
-                          </p>
 
-                          <img class="signature" src="${this.assinatura}" />
-                          <p class="local">Vitória da Conquista, Bahia</p>
-                        </div>
-                      </div>
-                    </div>`;
+              const certificateDiv = document.createElement("div");
+              certificateDiv.classList.add("certificate");
+
+              certificateDiv.innerHTML = `
+              <div class="container-form">
+                <div id="content">
+                  <div class="center">
+                    <p class="titulo conteudo">Certificado</p>
+                    <p class="fonte-normal-1">A Prepara Cursos certifica para devidos fins que</p>
+                    <p class="nome-aluno">${this.nomeValid(aluno[0])}</p>
+                    <p class="fonte-normal-2">Concluiu com êxito a Oficina de ${this.cursoValid(
+                      aluno[1]
+                    )} em 2023, com a carga horária total de
+                      ${aluno[2]} hora(s) na Prepara Cursos.</p>
+                    <img class="signature" src="${this.assinatura}">
+                    <p class="local">Vitória da Conquista, Bahia</p>
+                  </div>
+                </div>
+              </div>
+              `;
+
+              // Gere o certificado em PDF
+              this.gerarCertificado(this.nomeValid(aluno[0]), certificateDiv);
             }
-            // Gere o certificado em PDF
-            this.gerarCertificado(this.nomeValid(aluno[0]), this.content);
           }
         };
 
