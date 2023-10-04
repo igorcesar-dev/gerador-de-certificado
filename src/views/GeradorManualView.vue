@@ -67,14 +67,14 @@ export default {
       carga: "",
       educador: "filipe", // Valor padrão
       arrayImg: [
-        "../../public/frontend/assets/img/assinaturaFilipe.png",
-        "../../public/frontend/assets/img/assinaturaIgor.png",
-        "../../public/frontend/assets/img/assinaturaMiqueias.png",
-        "../../public/frontend/assets/img/assinaturaNadine.png",
-        "../../public/frontend/assets/img/assinaturaPaula.png",
-        "../../public/frontend/assets/img/assinaturaReginaldo.png",
-        "../../public/frontend/assets/img/assinaturaSara.png",
-        "../../public/frontend/assets/img/assinaturaGeral.png",
+        "..//public/frontend/assets/img/assinaturaFilipe.png",
+        "..//public/frontend/assets/img/assinaturaIgor.png",
+        "..//public/frontend/assets/img/assinaturaMiqueias.png",
+        "..//public/frontend/assets/img/assinaturaNadine.png",
+        "..//public/frontend/assets/img/assinaturaPaula.png",
+        "..//public/frontend/assets/img/assinaturaReginaldo.png",
+        "..//public/frontend/assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaGeral.png",
       ],
       educadores: {
         filipe: 0,
