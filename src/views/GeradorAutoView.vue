@@ -78,7 +78,7 @@ export default {
 
               certificateDiv.innerHTML = `
               <div class="container-form">
-                <div id="${this.assinatura}">
+                <div id="content">
                   <div class="center">
                     <p class="titulo conteudo">Certificado</p>
                     <p class="fonte-normal-1">A Prepara Cursos certifica para devidos fins que</p>
@@ -87,6 +87,7 @@ export default {
                       aluno[1]
                     )} em 2023, com a carga horária total de
                       ${aluno[2]} hora(s) na Prepara Cursos.</p>
+                    <img class="signature" src="${this.assinatura}">
                     <p class="local">Vitória da Conquista, Bahia</p>
                   </div>
                 </div>
