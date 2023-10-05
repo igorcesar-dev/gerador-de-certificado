@@ -67,12 +67,12 @@ export default {
       carga: "",
       educador: "filipe", // Valor padrão
       arrayImg: [
-        "..//public/img/assinaturaFilipe.png",
-        "..//public/img/assinaturaIgor.png",
-        "..//public/img/assinaturaMiqueias.png",
-        "..//public/img/assinaturaNadine.png",
-        "..//public/img/assinaturaPaula.png",
-        "..//public/img/assinaturaReginaldo.png",
+        "../public/img/assinaturaFilipe.png",
+        "../public/img/assinaturaIgor.png",
+        "../public/img/assinaturaMiqueias.png",
+        "../public/img/assinaturaNadine.png",
+        "../public/img/assinaturaPaula.png",
+        "../public/img/assinaturaReginaldo.png",
       ],
       educadores: {
         filipe: 0,
