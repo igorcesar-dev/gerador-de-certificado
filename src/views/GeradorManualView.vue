@@ -289,7 +289,7 @@ input {
 }
 
 .signature {
-  width: 9em;
+  width: 10em;
   border-bottom: solid 1px;
   margin: 1em;
   text-align: center;

@@ -180,6 +180,6 @@ export default {
 }
 
 .signature {
-  width: 9em;
+  width: 10em;
 }
 </style>
