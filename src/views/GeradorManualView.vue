@@ -45,7 +45,6 @@
                   Concluiu com êxito a Oficina de {{ this.curso }} em 2023, com a carga
                   horária total de {{ this.carga }} hora(s) na Prepara Cursos.
                 </p>
-                <img class="signature" src="/img/assinaturaFilipe.png" alt="">
                 <p class="local">Vitória da Conquista, Bahia</p>
               </div>
             </div>
