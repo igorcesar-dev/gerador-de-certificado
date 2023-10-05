@@ -22,14 +22,14 @@ export default {
   data() {
     return {
       arrayImg: [
-        "https://drive.google.com/file/d/1zCe-cmHDWAWrxlZDE0eUYMY3meyRLDsM/view?usp=sharing",
-        "https://drive.google.com/file/d/1ossb44ktqO2h9VJIm3HAQdk7xUxBJB44/view?usp=sharing",
-        "https://drive.google.com/file/d/19mIK4xlmf2_DracpegBzcHEXpo_xorui/view?usp=sharing",
-        "https://drive.google.com/file/d/1HQavo5Gz9vNH3Ca-88ZzhBC30G0eFWHI/view?usp=sharing",
-        "https://drive.google.com/file/d/1Mw5J5K9Nj8iE-cobG9HAyvyE6HbsSk2v/view?usp=sharing",
-        "https://drive.google.com/file/d/1AYH-3oj7v--yGp8LqQO_8xEFB0vQYKHa/view?usp=sharing",
-        "..//public/frontend/assets/img/sara.png",
-        "..//public/frontend/assets/img/geral.png",
+        "..//public/frontend/assets/img/assinaturaFilipe.png",
+        "..//public/frontend/assets/img/assinaturaIgor.png",
+        "..//public/frontend/assets/img/assinaturaMiqueias.png",
+        "..//public/frontend/assets/img/assinaturaNadine.png",
+        "..//public/frontend/assets/img/assinaturaPaula.png",
+        "..//public/frontend/assets/img/assinaturaReginaldo.png",
+        "..//public/frontend/assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaGeral.png",
       ],
       educadorMap: {
         filipe: 0,

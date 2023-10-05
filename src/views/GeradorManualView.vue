@@ -45,7 +45,6 @@
                   Concluiu com êxito a Oficina de {{ this.curso }} em 2023, com a carga
                   horária total de {{ this.carga }} hora(s) na Prepara Cursos.
                 </p>
-                <img src="https://drive.google.com/file/d/1zCe-cmHDWAWrxlZDE0eUYMY3meyRLDsM/preview" alt="">
                 <img class="signature" :src="assinatura" />
                 <p class="local">Vitória da Conquista, Bahia</p>
               </div>
@@ -68,14 +67,14 @@ export default {
       carga: "",
       educador: "filipe", // Valor padrão
       arrayImg: [
-        "https://drive.google.com/file/d/1zCe-cmHDWAWrxlZDE0eUYMY3meyRLDsM/preview",
-        "..//public/frontend/assets/img/igor.png",
-        "..//public/frontend/assets/img/miqueias.png",
-        "..//public/frontend/assets/img/nadine.png",
-        "..//public/frontend/assets/img/paula.png",
-        "..//public/frontend/assets/img/reginaldo.png",
-        "..//public/frontend/assets/img/sara.png",
-        "..//public/frontend/assets/img/geral.png",
+        "..//public/frontend/assets/img/assinaturaFilipe.png",
+        "..//public/frontend/assets/img/assinaturaIgor.png",
+        "..//public/frontend/assets/img/assinaturaMiqueias.png",
+        "..//public/frontend/assets/img/assinaturaNadine.png",
+        "..//public/frontend/assets/img/assinaturaPaula.png",
+        "..//public/frontend/assets/img/assinaturaReginaldo.png",
+        "..//public/frontend/assets/img/assinaturaSara.png",
+        "..//public/frontend/assets/img/assinaturaGeral.png",
       ],
       educadores: {
         filipe: 0,
