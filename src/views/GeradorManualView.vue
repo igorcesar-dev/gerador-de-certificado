@@ -45,7 +45,7 @@
                   Concluiu com êxito a Oficina de {{ this.curso }} em 2023, com a carga
                   horária total de {{ this.carga }} hora(s) na Prepara Cursos.
                 </p>
-                <img class="signature" :src="assinatura" />
+                <img class="signature" :src="assinatura" alt="">
                 <p class="local">Vitória da Conquista, Bahia</p>
               </div>
             </div>
@@ -67,14 +67,12 @@ export default {
       carga: "",
       educador: "filipe", // Valor padrão
       arrayImg: [
-        "..//public/frontend/assets/img/assinaturaFilipe.png",
-        "..//public/frontend/assets/img/assinaturaIgor.png",
-        "..//public/frontend/assets/img/assinaturaMiqueias.png",
-        "..//public/frontend/assets/img/assinaturaNadine.png",
-        "..//public/frontend/assets/img/assinaturaPaula.png",
-        "..//public/frontend/assets/img/assinaturaReginaldo.png",
-        "..//public/frontend/assets/img/assinaturaSara.png",
-        "..//public/frontend/assets/img/assinaturaGeral.png",
+        "..//public/img/assinaturaFilipe.png",
+        "..//public/img/assinaturaIgor.png",
+        "..//public/img/assinaturaMiqueias.png",
+        "..//public/img/assinaturaNadine.png",
+        "..//public/img/assinaturaPaula.png",
+        "..//public/img/assinaturaReginaldo.png",
       ],
       educadores: {
         filipe: 0,
@@ -132,8 +130,7 @@ export default {
                   Concluiu com êxito a Oficina de ${this.curso} em 2023, com a carga
                   horária total de ${this.carga} hora(s) na Prepara Cursos.
                 </p>
-                
-                <img class="signature" src="${this.assinatura}" />
+                <img class="signature" src="${this.assinatura}" alt="">
                 <p class="local">Vitória da Conquista, Bahia</p>
               </div>
             </div>
@@ -236,7 +233,7 @@ input {
 }
 
 #content {
-  background-image: url("../../public/frontend/assets/img/modeloPrepara.jpeg");
+  background-image: url("../../public//img/modeloPrepara.jpeg");
   background-size: cover;
   background-position: center center;
   width: 49em;
