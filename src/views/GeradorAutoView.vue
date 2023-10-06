@@ -2,12 +2,20 @@
   <div class="bg-dark-subtle tela">
     <div class="container">
       <div class="row pt-5">
-        <div>
+        <div class="col">
           <div class="generateAll">
             <h3>Selecione um arquivo em excel e escolha onde salvar:</h3>
             <input type="file" id="excelFileInput" ref="fileInput" @change="handleFile" />
             <div id="dataDisplay"></div>
           </div>
+        </div>
+        <div class="col pt-1">
+        <h4>Modelo da planilha que deve ser enviada</h4>
+          <img
+            class="imagem-planilha"
+            src="../../public/img/modelo-planilha.png"
+            alt=""
+          />
         </div>
       </div>
     </div>
@@ -181,5 +189,8 @@ export default {
 
 .signature {
   width: 10em;
+}
+.imagem-planilha {
+  width: 100%;
 }
 </style>
