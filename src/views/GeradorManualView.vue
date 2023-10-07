@@ -232,7 +232,7 @@ input {
 }
 
 #content {
-  background-image: url("../../public//img/modeloPrepara.jpeg");
+  background-image: url("../../public/img/modeloPrepara.jpeg");
   background-size: cover;
   background-position: center center;
   width: 49em;
