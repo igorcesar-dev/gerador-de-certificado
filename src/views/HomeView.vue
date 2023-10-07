@@ -1,6 +1,6 @@
 <template>
   <div class="bg-dark-subtle">
-    <div class="home">
+    <div class="home container">
       <div>
         <h1>Gerador de certificados - por Igor César</h1>
         <p>Gere certificados com apenas "1" click</p>
