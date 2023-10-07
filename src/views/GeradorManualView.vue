@@ -1,7 +1,7 @@
 <template>
   <div class="bg-dark-subtle tela">
     <div class="container">
-      <div class="row pt-5">
+      <div class="row pt-5" id="divisao">
         <div class="col">
           <div class="certificateManually">
             <h3 class="title-h3">Dados do aluno:</h3>
@@ -34,20 +34,11 @@
 
         <div class="col">
           <div class="container-form">
-            <div id="content">
-              <div class="center">
-                <p class="titulo">Certificado</p>
-                <p class="fonte-normal-1">
-                  A Prepara Cursos certifica para devidos fins que
-                </p>
-                <p class="nome-aluno">{{ this.aluno }}</p>
-                <p class="fonte-normal-2">
-                  Concluiu com êxito a Oficina de {{ this.curso }} em 2023, com a carga
-                  horária total de {{ this.carga }} hora(s) na Prepara Cursos.
-                </p>
-                <p class="local">Vitória da Conquista, Bahia</p>
-              </div>
-            </div>
+              <img
+                class="img-certificado"
+                src="../../public/img/modeloPrepara.jpeg"
+                alt=""
+              />
           </div>
         </div>
       </div>
@@ -293,5 +284,21 @@ input {
   border-bottom: solid 1px;
   margin: 1em;
   text-align: center;
+}
+
+.img-certificado {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  #divisao {
+    display: grid;
+    padding-top: 10px !important;
+  }
+
+  .tela .container {
+    height: 100vh;
+  }
 }
 </style>

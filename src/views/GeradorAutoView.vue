@@ -1,7 +1,7 @@
 <template>
   <div class="bg-dark-subtle tela">
     <div class="container">
-      <div class="row pt-5">
+      <div class="row pt-5" id="divisao">
         <div class="col">
           <div class="generateAll">
             <h3>Selecione um arquivo em excel e escolha onde salvar:</h3>
@@ -192,5 +192,22 @@ export default {
 }
 .imagem-planilha {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  #divisao {
+    display: grid;
+    padding-top: 10px !important;
+  }
+
+  .tela .container {
+    height: 100vh;
+  }
+
+  .generateAll {
+    margin-top: 3em;
+    margin-bottom: 3em;
+  }
+  
 }
 </style>
