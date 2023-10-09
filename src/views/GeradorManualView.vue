@@ -102,7 +102,6 @@ export default {
     },
     gerarCertificadoManual() {
       this.aluno = this.nomeFormatado;
-      this.curso = this.cursoFormatado;
 
       if (this.educador in this.educadores) {
         this.educadorN = this.educadores[this.educador];
