@@ -91,9 +91,7 @@ export default {
                     <p class="titulo conteudo">Certificado</p>
                     <p class="fonte-normal-1">A Prepara Cursos certifica para devidos fins que</p>
                     <p class="nome-aluno">${this.nomeValid(aluno[0])}</p>
-                    <p class="fonte-normal-2">Concluiu com êxito a Oficina de ${this.cursoValid(
-                      aluno[1]
-                    )} em 2023, com a carga horária total de
+                    <p class="fonte-normal-2">Concluiu com êxito a Oficina de ${aluno[1]} em 2023, com a carga horária total de
                       ${aluno[2]} hora(s) na Prepara Cursos.</p>
                     <img class="signature" src="${this.assinatura}">
                     <p class="local">Vitória da Conquista, Bahia</p>
@@ -151,30 +149,6 @@ export default {
         return `${primeiroNome} ${nomeMeioAbreviados} ${ultimoNome}`;
       } else {
         return nome;
-      }
-    },
-    cursoValid(curso) {
-      if (curso.length > 40) {
-        const partesCurso = curso.split(" ");
-        const primeiroNomeCurso = partesCurso[0];
-        const ultimoNomeCurso = partesCurso[partesCurso.length - 1];
-        let nomeCursoMeio = "";
-
-        if (partesCurso.length > 2) {
-          nomeCursoMeio =
-            " " +
-            partesCurso[1].charAt(0) +
-            ". " +
-            partesCurso[partesCurso.length - 2].charAt(0) +
-            ".";
-        } else {
-          for (let i = 1; i < partesCurso.length - 1; i++) {
-            nomeCursoMeio += " " + partesCurso[i];
-          }
-        }
-        return `${primeiroNomeCurso} ${nomeCursoMeio} ${ultimoNomeCurso}`;
-      } else {
-        return curso;
       }
     },
   },
