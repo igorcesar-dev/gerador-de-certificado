@@ -52,7 +52,8 @@ export default {
     };
   },
   methods: {
-    handleFile(event) {
+    // Método que identifica e trata o arquivo em formato XLSX.
+    arquivoIdentificado(event) {
       const file = event.target.files[0];
 
       if (file) {
@@ -111,6 +112,8 @@ export default {
         console.error("Nenhum arquivo selecionado.");
       }
     },
+
+    // Método que gera o certificado
     gerarCertificado(aluno, content) {
       //configuração do arquivo final do pdf
       const options = {
@@ -120,13 +123,15 @@ export default {
         jsPDF: {
           unit: "mm",
           format: "A5",
-          orientation: "landscape" /*colocar em paisagem*/,
+          orientation: "landscape"
         },
       };
 
       //Gerar e baixar o PDF
       html2pdf().set(options).from(content).save();
     },
+
+    // Método para validar o tamanho do nome, caso seja maior que 35, haverá abreviação.
     nomeValid(nome) {
       if (nome.length > 35) {
         const partesNome = nome.split(" ");

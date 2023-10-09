@@ -4,6 +4,7 @@
       <div class="row pt-5" id="divisao">
         <div class="col">
           <div class="certificateManually">
+          <!-- Formulário para capturar dados -->
             <h3 class="title-h3">Dados do aluno:</h3>
             <label class="label" for="nome">Nome completo do aluno</label>
             <input type="text" id="aluno" name="nome" maxlength="30" v-model="aluno" />
@@ -26,12 +27,14 @@
               <option value="assinaturaGeral">Assinatura geral</option>
             </select>
 
+            <!-- Botão para gerar certificado -->
             <button id="buttonGenerate" @click="gerarCertificadoManual">
               Gerar certificado manualmente
             </button>
           </div>
         </div>
 
+        <!-- Container que mostra o modelo de certificado -->
         <div class="col">
           <div class="container-form">
               <img
@@ -86,20 +89,17 @@ export default {
     nomeFormatado() {
       return this.capitalizarPalavras(this.aluno);
     },
-    cursoFormatado() {
-      return this.capitalizarPalavras(this.curso);
-    },
     educadorIndex() {
       return this.educadores[this.educador] || -1;
     },
   },
   methods: {
-    geraralgo() {
-      this.gerarCertificadoManual;
-    },
+    // Método para deixar as palavras em capitular.
     capitalizarPalavras(str) {
       return str.replace(/(?:^|\s)\S/g, (char) => char.toUpperCase());
     },
+
+    // Método para gerar o certificado.
     gerarCertificadoManual() {
       this.aluno = this.nomeFormatado;
 
@@ -125,6 +125,8 @@ export default {
             </div>
           </div>`;
       }
+
+      // Configuração da geral do pdf.
       const options = {
         margin: [0, 0, 0, 0],
         filename: this.aluno + ".pdf",
