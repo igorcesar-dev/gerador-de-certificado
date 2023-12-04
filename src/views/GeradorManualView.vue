@@ -129,7 +129,7 @@ export default {
       // Configuração da geral do pdf.
       const options = {
         margin: [0, 0, 0, 0],
-        filename: this.aluno + ".img",
+        filename: this.aluno + ".pdf",
         html2canvas: { scale: 2 },
         jsPDF: { unit: "mm", format: "A5", orientation: "landscape" },
       };
